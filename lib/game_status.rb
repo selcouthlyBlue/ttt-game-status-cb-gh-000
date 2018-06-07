@@ -16,7 +16,7 @@ def winning_combination?(board, win_combination)
   char = board[win_combination[0]]
   win_combination.each do |index|
     square = board[index]
-    if !occupied?(board, square) || status != char
+    if !occupied?(board, square) || square != char
       return false
     end
   end
