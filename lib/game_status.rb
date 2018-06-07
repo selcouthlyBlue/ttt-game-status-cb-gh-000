@@ -34,7 +34,7 @@ def over?(board)
   return full?(board) || !draw?(board)
 end
 
-def winner?(board)
+def winner(board)
   return "X"
 end
 
