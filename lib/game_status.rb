@@ -27,7 +27,7 @@ def full?(board)
 end
 
 def draw?(board)
-  return !(won?(board, winning_combination))
+  return !(won?(board))
 end
 
 # Define your WIN_COMBINATIONS constant
