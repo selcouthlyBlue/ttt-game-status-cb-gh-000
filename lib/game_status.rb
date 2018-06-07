@@ -4,7 +4,9 @@ def position_taken?(board, index)
 end
 
 def won?(board)
-  
+  WIN_COMBINATIONS.each do |win_combination|
+    
+  end
   return false
 end
 
