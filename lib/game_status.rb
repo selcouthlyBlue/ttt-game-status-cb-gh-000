@@ -9,7 +9,7 @@ def won?(board)
       return win_combination
     end
   end
-  return false
+  return nil
 end
 
 def winning_combination?(board, win_combination)
