@@ -23,7 +23,7 @@ def winning_combination?(board, win_combination)
 end
 
 def full?(board)
-  return board.include?("") || board.include?(" ") || board.include(nil))
+  return !board.include?("") || !board.include?(" ") || !board.include(nil)
 end
 
 # Define your WIN_COMBINATIONS constant
