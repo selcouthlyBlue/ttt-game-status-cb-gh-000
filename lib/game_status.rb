@@ -26,6 +26,10 @@ def full?(board)
   return !(board.include?(" ") || board.include?("") || board.include?(nil))
 end
 
+def draw?(board)
+  return true
+end
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2],
