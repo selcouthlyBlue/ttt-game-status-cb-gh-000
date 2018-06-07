@@ -31,7 +31,7 @@ def draw?(board)
 end
 
 def over?(board)
-  return !draw(board)
+  return !draw?(board)
 end
 
 # Define your WIN_COMBINATIONS constant
