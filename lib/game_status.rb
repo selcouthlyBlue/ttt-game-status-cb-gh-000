@@ -13,8 +13,9 @@ def won?(board)
 end
 
 def winning_combination?(board, win_combination)
+  char = board[win_combination[0]]
   win_combination.each do |index|
-    if board[index] != "X"
+    if board[index] != char
       return false
     end
   end
