@@ -27,7 +27,7 @@ def full?(board)
 end
 
 def draw?(board)
-  return !(won?(board))
+  return !won?(board)
 end
 
 def over?(board)
