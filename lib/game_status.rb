@@ -5,9 +5,19 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    
+    if winning_combination?(board, win_combination)
+      return win_combination
+    end
   end
   return false
+end
+
+def winning_combination(board, win_combination)
+  win_combination.each do |index|
+    if board[index] != "X"
+      return false
+  end
+  return true
 end
 
 # Define your WIN_COMBINATIONS constant
