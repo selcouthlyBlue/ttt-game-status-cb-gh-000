@@ -16,15 +16,11 @@ def winning_combination?(board, win_combination)
   char = board[win_combination[0]]
   win_combination.each do |index|
     square = board[index]
-    if !occupied?(board, square) || square != char
+    if !position_taken?(board, square) || square != char
       return false
     end
   end
   return true
-end
-
-def occupied?(board, square)
-  return square || square != " " || square != ""
 end
 
 # Define your WIN_COMBINATIONS constant
